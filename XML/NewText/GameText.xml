@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_EN_US>
+		<Row Tag="TXT_KEY_COW_MAP_FAIR">
+			<Text>Circle of War</Text>
+		</Row>
+		<Row Tag="TXT_KEY_COW_MAP_FAIR_HELP">
+			<Text>Play in single continent that forms a circle with a sea in the middle, and randomly generated edges.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_COW_MAP_OPTION_CIRCLE_TYPE">
+			<Text>Circle type</Text>
+		</Row>
+		<Row Tag="TXT_KEY_COW_MAP_OPTION_LESS_SEAS">
+			<Text>Less big lakes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_COW_MAP_OPTION_MANY_SEAS">
+			<Text>Many big lakes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_COW_MAP_OPTION_RANDOM">
+			<Text>Random</Text>
+		</Row>
+	</Language_EN_US>
+</GameData>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="3151ec83-6d1e-4100-98da-65ea14caa862" version="2">
+  <Properties>
+    <Name>Circle Of War - Map Script</Name>
+    <Description>Play in single continent that forms a circle with a sea in the middle.
+[NEWLINE][NEWLINE]
+Features random, long mountain ranges and many big lakes. Multiple random paths around circle are guaranteed. Ability to circumnavigate the globe over the middle sea is guaranteed. This map script uses default resource generator. You can select Temperature, Rainfall, Resources and reduce number of lakes.
+[NEWLINE][NEWLINE]
+If you have any feedback, follow this link:[NEWLINE]
+[COLOR_CYAN]http://forums.civfanatics.com/showthread.php?t=9753479[ENDCOLOR]
+[NEWLINE][NEWLINE]
+Changes in version 2:[NEWLINE]
+- Avoid huge amounts of land with snow in arctic region[NEWLINE]
+- On smallest map, exit from middle sea to ocean was not always completely generated[NEWLINE]
+- Ensure there is a land near every sea resource at least 3 tiles away from it[NEWLINE]
+- Much smaller probability of unreachable tiles trapped inside mountain ranges[NEWLINE]
+- Multiple exits from middle sea can happen randomly now</Description>
+    <Authors>Nerijus Arlauskas</Authors>
+    <SpecialThanks>civfanatics.com, weplayciv.com</SpecialThanks>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="18CA447190FE7E733BE546B5FD04CDE4">BeeHelpers.lua</File>
+    <File md5="F9CF9271F7A8AC265DD90D5F567543DD">Maps/CircleOfWar.lua</File>
+    <File md5="267289CADBE84485674C5AEA6E10CC40">RandHelpers.lua</File>
+    <File md5="80A59A17F1DB616C64E1ED0F5251E3D5">XML/NewText/GameText.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/NewText/GameText.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="MapScript" file="Maps/CircleOfWar.lua">
+      <Name>Circle of War</Name>
+      <Description>Circle of War - Map Script</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>
